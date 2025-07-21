@@ -1,0 +1,13 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "General Knowledge",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the capital of Australia?",
+      "correct_answer": "Canberra",
+      "incorrect_answers": ["Sydney", "Melbourne", "Perth"]
+    }
+  ]
+}
