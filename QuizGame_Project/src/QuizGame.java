@@ -6,7 +6,7 @@ public class QuizGame {
         Scanner scanner = new Scanner(System.in);
         QuizService service = new QuizService();
 
-        System.out.println("🎮 Welcome to the Java Quiz Game!");
+        System.out.println(" Welcome to the Java Quiz Game!");
         System.out.print("Enter number of questions: ");
         int amount = scanner.nextInt();
         scanner.nextLine(); // consume newline
@@ -30,13 +30,13 @@ public class QuizGame {
             if (selectedIndex >= 0 && selectedIndex < options.size()) {
                 String selectedAnswer = options.get(selectedIndex);
                 if (selectedAnswer.equals(q.getCorrectAnswer())) {
-                    System.out.println("✅ Correct!");
+                    System.out.println(" Correct!");
                     score++;
                 } else {
-                    System.out.println("❌ Wrong! Correct Answer: " + q.getCorrectAnswer());
+                    System.out.println(" Wrong! Correct Answer: " + q.getCorrectAnswer());
                 }
             } else {
-                System.out.println("⚠️ Invalid choice.");
+                System.out.println(" Invalid choice.");
             }
         }
 
