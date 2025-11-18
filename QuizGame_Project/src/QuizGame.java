@@ -9,7 +9,7 @@ public class QuizGame {
         System.out.println(" Welcome to the Java Quiz Game!");
         System.out.print("Enter number of questions: ");
         int amount = scanner.nextInt();
-        scanner.nextLine(); // consume newline
+        scanner.nextLine(); 
 
         List<Question> questions = service.fetchQuestions(amount);
         int score = 0;
@@ -40,7 +40,7 @@ public class QuizGame {
             }
         }
 
-        System.out.println("\n🏁 Quiz Over! Your score: " + score + "/" + amount);
+        System.out.println("\n Quiz Over! Your score: " + score + "/" + amount);
         scanner.close();
     }
 }
